@@ -1,0 +1,1134 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zephery | 温志怀的个人博客
+    </title>
+    <meta charset="UTF-8">
+    <link type="image/x-icon" rel="shortcut icon" href="http://image.wenzhihuai.com/66.jpg"/>
+    <link href="http://image.wenzhihuai.com/blogbootstrap.css?ver=20171019" type="text/css" rel="stylesheet"
+          media="all">
+    <link href="http://image.wenzhihuai.com/style.css?ver=201711151452" type="text/css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="http://image.wenzhihuai.com/jingmi.css?ver=20171017"
+          type="text/css" media="all">
+    <link href="http://image.wenzhihuai.com/lanrenzhijia.css?ver=20171017" type="text/css"
+          rel="stylesheet"/>
+    
+    <link href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="http://image.wenzhihuai.com/social-share-1.0.2/dist/social-share.min.css?ver=20171017">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="http://image.wenzhihuai.com/social-share-1.0.2/dist/social-share.min.js?ver=20171017"></script>
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    <script type="text/javascript" src="http://image.wenzhihuai.com/move-top.js?ver=2017111411"></script>
+    <script type="text/javascript" src="http://image.wenzhihuai.com/easing.js?ver=20171017"></script>
+    <script>
+        $(function () {
+            var el = document.getElementById('share-area');
+            var links = [{
+                plugin: 'github',
+                url: 'https://github.com/Zephery'
+            }, {
+                plugin: 'weibo',
+                url: 'http://weibo.com/1925306000'
+            }, {
+                plugin: 'facebook',
+                args: {
+                    id: 'zephery.wen'           // Your facebook ID
+                }
+            }];
+            var options = {
+                size: 'sm'
+            };
+            window.socialShare(el, links, options);
+        });
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+            });
+        });
+    </script>
+    <!--//end-smoth-scrolling-->
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!--SEO-->
+    <meta name="title" content="Zephery | 温志怀的个人日志">
+    <meta name="keywords" content="温志怀,wenzhihuai,java,机器学习,python,日志"/>
+    <meta name="description" content="温志怀的个人日志"/>
+    <meta name="author" content="温志怀"/>
+    <!--百度统计-->
+    <script type="text/javascript">
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?e580b8db831811a4aaf4a8f3e30034dc";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <!--百度站内搜索验证-->
+    <meta name="baidu-site-verification" content="me5PEgngG6"/>
+    <!--百度链接提交，自动推送-->
+    <script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+    <!--360搜索-->
+    <meta name="360-site-verification" content="db160af16a61f74e2657c0540f4ccd0d"/>
+    
+    
+    
+    
+    
+    
+    <!--搜狗-->
+    <meta name="sogou_site_verification" content="Lzg0yrcxwy"/>
+    <!--bing-->
+    <meta name="msvalidate.01" content="68A11010C9AEE3FD3F5BD421EACC7499"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    
+    
+        
+        
+        
+
+        
+    
+
+</head>
+<body>
+<!--navigation-->
+<div class="top-nav">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="/index.html"
+                           class="active">主页</a></li>
+                    <li><a href="/tech.html?pagenum=1"
+                           class="null">技术杂谈</a></li>
+                    <li><a href="/life.html?pagenum=1"
+                           class="null">生活笔记</a></li>
+                    <li><a href="/log.html"
+                           class="null">日志系统</a></li>
+                    <li><a href="/board.html"
+                           class="null">留言板</a></li>
+                    <li><a href="/aboutme.html"
+                           class="null">关于我</a></li>
+                    <li><a href="/trip.html"
+                           class="null">旅行</a></li>
+                    <li><a href="/donate.html"
+                           class="null">捐赠</a></li>
+                    <li><a href="/live.html"
+                           class="null">直播</a></li>
+                    
+                           
+                    
+                           
+                    
+                           
+                </ul>
+                <div class="social-icons">
+                    <div id="share-area" style="margin-top: -5px"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </nav>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $().UItoTop({easingType: 'easeOutQuart'});
+    });
+</script>
+<a href="#" id="toTop"></a>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.js" type="text/javascript"></script>
+<script type="text/javascript">
+    function checkData() {
+        var q = $("#remote_input").val();
+        if (q == null || q == "") {
+            alert("请输入您要查询的关键字！");
+            return false;
+        } else {
+            return true;
+        }
+    }
+</script>
+<!--header-->
+<div class="header">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html"><img src="http://image.wenzhihuai.com/logo.png?ver=20171017"
+                                                           alt=""></a>
+        </div>
+        <form action="/search.html" method="post"
+              class="navbar-form navbar-right" role="search">
+            <div class="input-group" style="margin-bottom: -10px">
+                <input type="text" name="keyword"
+                       class="form-control" id="remote_input" placeholder="Searching...">
+                <span class="input-group-btn">
+                    <button id="open" class="btn btn-default" type="submit" onsubmit="checkData()">搜索</button>
+			</span>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+<link rel="stylesheet" href="http://image.wenzhihuai.com/jquery.autocomplete.css">
+<script src="http://image.wenzhihuai.com/jquery.autocomplete.js" type="text/javascript"></script>
+<script type="text/javascript">
+    /******************** remote start **********************/
+    var remote_input = $('#remote_input');
+    remote_input.autocomplete({
+        source: [
+            {
+                minChars: 1,
+                url: "/ajaxsearch.do?keyword=%!Q(MISSING)UERY%!"(MISSING),
+                type: 'remote'
+            }
+        ]
+    });
+    /********************* remote end ********************/
+</script>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://image.wenzhihuai.com/responsiveslides.min.js?ver=20171017"></script>
+    <!-- Start WOWSlider.com HEAD section -->
+    <link rel="stylesheet" type="text/css" href="http://image.wenzhihuai.com/wowsliderstyle.css?ver=20171017"/>
+    <!-- End WOWSlider.com HEAD section -->
+    <script type="text/javascript">
+        $(function () {
+            $("#slider").responsiveSlides({
+                auto: true,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                pager: false
+            });
+        });
+    </script>
+</head>
+<body class="home blog hPC">
+<section class="contentcontainer">
+    <div class="content-wrap">
+        <div class="content">
+            <div>
+                <!-- Start WOWSlider.com BODY section -->
+                <div id="wowslider-container1">
+                    <div class="ws_images">
+                        <ul>
+                            
+                                <li>
+                                    <a href="getblogdetail.html?blogid=668" target="_self">
+                                        <img src="http://image.wenzhihuai.com/images/20171104110123.png!/both/830x500?imageView2/1/w/830/h/500"
+                                             alt="一次jvm调优过程" title="一次jvm调优过程"
+                                             id="wows1_0"/>
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="getblogdetail.html?blogid=666" target="_self">
+                                        <img src="http://image.wenzhihuai.com/images/202001010535231861948911.png!/both/830x500?imageView2/1/w/830/h/500"
+                                             alt="2019年总结" title="2019年总结"
+                                             id="wows1_0"/>
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="getblogdetail.html?blogid=664" target="_self">
+                                        <img src="https://upyuncdn.wenzhihuai.com/201908100428501805517052.png!/both/830x500?imageView2/1/w/830/h/500"
+                                             alt="Jenkinsfile与Json的转换" title="Jenkinsfile与Json的转换"
+                                             id="wows1_0"/>
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="getblogdetail.html?blogid=663" target="_self">
+                                        <img src="http://image.wenzhihuai.com/images/201908100524291184838290.png!/both/830x500?imageView2/1/w/830/h/500"
+                                             alt="DevOps平台" title="DevOps平台"
+                                             id="wows1_0"/>
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="getblogdetail.html?blogid=662" target="_self">
+                                        <img src="https://upyuncdn.wenzhihuai.com/201906020559061972119021.png!/both/830x500?imageView2/1/w/830/h/500"
+                                             alt="Kubernetes容器日志收集" title="Kubernetes容器日志收集"
+                                             id="wows1_0"/>
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="ws_bullets">
+                        <div>
+                            
+                                <a href="/getblogdetail.html?blogid=668"
+                                   title="一次jvm调优过程">
+                                    <span>
+                                        <img src="http://image.wenzhihuai.com/images/20171104110123.png!/both/120x90?imageView2/1/w/120/h/90"
+                                             alt="一次jvm调优过程"/>一次jvm调优过程
+                                    </span>
+                                </a>
+                            
+                                <a href="/getblogdetail.html?blogid=666"
+                                   title="2019年总结">
+                                    <span>
+                                        <img src="http://image.wenzhihuai.com/images/202001010535231861948911.png!/both/120x90?imageView2/1/w/120/h/90"
+                                             alt="2019年总结"/>2019年总结
+                                    </span>
+                                </a>
+                            
+                                <a href="/getblogdetail.html?blogid=664"
+                                   title="Jenkinsfile与Json的转换">
+                                    <span>
+                                        <img src="https://upyuncdn.wenzhihuai.com/201908100428501805517052.png!/both/120x90?imageView2/1/w/120/h/90"
+                                             alt="Jenkinsfile与Json的转换"/>Jenkinsfile与Json的转换
+                                    </span>
+                                </a>
+                            
+                                <a href="/getblogdetail.html?blogid=663"
+                                   title="DevOps平台">
+                                    <span>
+                                        <img src="http://image.wenzhihuai.com/images/201908100524291184838290.png!/both/120x90?imageView2/1/w/120/h/90"
+                                             alt="DevOps平台"/>DevOps平台
+                                    </span>
+                                </a>
+                            
+                                <a href="/getblogdetail.html?blogid=662"
+                                   title="Kubernetes容器日志收集">
+                                    <span>
+                                        <img src="https://upyuncdn.wenzhihuai.com/201906020559061972119021.png!/both/120x90?imageView2/1/w/120/h/90"
+                                             alt="Kubernetes容器日志收集"/>Kubernetes容器日志收集
+                                    </span>
+                                </a>
+                            
+                        </div>
+                    </div>
+                    <div class="ws_shadow"></div>
+                </div>
+                <!--wowslider依赖的jquery版本太低，只能继续使用jquery1.11.2-->
+                
+                <script type="text/javascript"
+                        src="/js/wowslider/engine1/wowslider.js"></script>
+                <script type="text/javascript"
+                        src="/js/wowslider/engine1/script.js"></script>
+                <!-- End WOWSlider.com BODY section -->
+            </div>
+            <div>
+                <div class="left-ad"
+                     style="clear: both;background-color: #fff; width: 30%!;(MISSING)float: left;margin-right:2%!;(MISSING)"></div>
+                <div class="hot-posts">
+                    <h2 class="title">热门排行</h2>
+                    <ul>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+
+
+            
+                <article class="excerpt">
+                    <header>
+                        <a class="label label-important"
+                           href="getcategory.html?categoryid=1">java<i
+                                class="label-arrow"></i></a>
+                        <h2><a href="getblogdetail.html?blogid=668"
+                               title="一次jvm调优过程">一次jvm调优过程</a>
+                        </h2>
+                    </header>
+                    <div class="focus">
+                        <a href="getblogdetail.html?blogid=668">
+                            <img class="thumb" src="http://image.wenzhihuai.com/images/20171104110123.png!/both/200x123?imageView2/1/w/200/h/123"
+                                 alt="一次jvm调优过程">
+                        </a>
+                    </div>
+                    <span class="note">前端时间把公司的一个分布式定时调度的系统弄上了容器云，部署在kubernetes，在容器运行的动不动就出现问题，特别容易jvm溢出，导致程序不可用，终端无法进入，日志一直在刷错误，kubernetes也没有将该容器自动重启。业务方基本每天都...</span>
+                    <p class="auth-span">
+                        <span class="muted"><i class="fa fa-clock-o"></i> 2020-01-21</span>
+                        <span class="muted"><i class="fa fa-eye"></i> 146浏览</span>
+                        <span class="muted">
+                            <a href="/getblogdetail.html?blogid=668">
+                            <span id="sourceId::668" class="cy_cmt_count"></span>
+                                <!--畅言导致加载缓慢，有时间处理一下-->
+                            <script id="cy_cmt_num"
+                                    src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cyt4SnwiG">
+                            </script>评论</a>
+                        </span>
+
+                </article>
+
+            
+                <article class="excerpt">
+                    <header>
+                        <a class="label label-important"
+                           href="getcategory.html?categoryid=0">生活笔记<i
+                                class="label-arrow"></i></a>
+                        <h2><a href="getblogdetail.html?blogid=666"
+                               title="2019年总结">2019年总结</a>
+                        </h2>
+                    </header>
+                    <div class="focus">
+                        <a href="getblogdetail.html?blogid=666">
+                            <img class="thumb" src="http://image.wenzhihuai.com/images/202001010535231861948911.png!/both/200x123?imageView2/1/w/200/h/123"
+                                 alt="2019年总结">
+                        </a>
+                    </div>
+                    <span class="note">2019，本命年，1字头开头的年份，就这么过去了，迎来了2开头的十年，12月过的不是很好，每隔几天就吵架，都没怎么想起写自己的年终总结了，对这个跨年也不是很重视，貌似有点浑浑噩噩的样子。今天1号，就继续来公司学习学习，就写写文章吧。
+19...</span>
+                    <p class="auth-span">
+                        <span class="muted"><i class="fa fa-clock-o"></i> 2020-01-01</span>
+                        <span class="muted"><i class="fa fa-eye"></i> 204浏览</span>
+                        <span class="muted">
+                            <a href="/getblogdetail.html?blogid=666">
+                            <span id="sourceId::666" class="cy_cmt_count"></span>
+                                <!--畅言导致加载缓慢，有时间处理一下-->
+                            <script id="cy_cmt_num"
+                                    src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cyt4SnwiG">
+                            </script>评论</a>
+                        </span>
+
+                </article>
+
+            
+                <article class="excerpt">
+                    <header>
+                        <a class="label label-important"
+                           href="getcategory.html?categoryid=1">java<i
+                                class="label-arrow"></i></a>
+                        <h2><a href="getblogdetail.html?blogid=664"
+                               title="Jenkinsfile与Json的转换">Jenkinsfile与Json的转换</a>
+                        </h2>
+                    </header>
+                    <div class="focus">
+                        <a href="getblogdetail.html?blogid=664">
+                            <img class="thumb" src="https://upyuncdn.wenzhihuai.com/201908100428501805517052.png!/both/200x123?imageView2/1/w/200/h/123"
+                                 alt="Jenkinsfile与Json的转换">
+                        </a>
+                    </div>
+                    <span class="note">前段时间调研了下青云的kubesphere，意外的发现了一个插件，[pipeline-model-definition-plugin](https://github.com/jenkinsci/pipeline-model-definiti...</span>
+                    <p class="auth-span">
+                        <span class="muted"><i class="fa fa-clock-o"></i> 2019-10-23</span>
+                        <span class="muted"><i class="fa fa-eye"></i> 314浏览</span>
+                        <span class="muted">
+                            <a href="/getblogdetail.html?blogid=664">
+                            <span id="sourceId::664" class="cy_cmt_count"></span>
+                                <!--畅言导致加载缓慢，有时间处理一下-->
+                            <script id="cy_cmt_num"
+                                    src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cyt4SnwiG">
+                            </script>评论</a>
+                        </span>
+
+                </article>
+
+            
+                <article class="excerpt">
+                    <header>
+                        <a class="label label-important"
+                           href="getcategory.html?categoryid=50">DevOps<i
+                                class="label-arrow"></i></a>
+                        <h2><a href="getblogdetail.html?blogid=663"
+                               title="DevOps平台">DevOps平台</a>
+                        </h2>
+                    </header>
+                    <div class="focus">
+                        <a href="getblogdetail.html?blogid=663">
+                            <img class="thumb" src="http://image.wenzhihuai.com/images/201908100524291184838290.png!/both/200x123?imageView2/1/w/200/h/123"
+                                 alt="DevOps平台">
+                        </a>
+                    </div>
+                    <span class="note"># 3.1 DevOps平台.md
+
+DevOps定义（来自维基百科）： DevOps（Development和Operations的组合词）是一种重视“软件开发人员（Dev）”和“IT运维技术人员（Ops）”之间沟通合作的文化、运动或...</span>
+                    <p class="auth-span">
+                        <span class="muted"><i class="fa fa-clock-o"></i> 2019-09-15</span>
+                        <span class="muted"><i class="fa fa-eye"></i> 363浏览</span>
+                        <span class="muted">
+                            <a href="/getblogdetail.html?blogid=663">
+                            <span id="sourceId::663" class="cy_cmt_count"></span>
+                                <!--畅言导致加载缓慢，有时间处理一下-->
+                            <script id="cy_cmt_num"
+                                    src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cyt4SnwiG">
+                            </script>评论</a>
+                        </span>
+
+                </article>
+
+            
+                <article class="excerpt">
+                    <header>
+                        <a class="label label-important"
+                           href="getcategory.html?categoryid=49">Kubernetes<i
+                                class="label-arrow"></i></a>
+                        <h2><a href="getblogdetail.html?blogid=662"
+                               title="Kubernetes容器日志收集">Kubernetes容器日志收集</a>
+                        </h2>
+                    </header>
+                    <div class="focus">
+                        <a href="getblogdetail.html?blogid=662">
+                            <img class="thumb" src="https://upyuncdn.wenzhihuai.com/201906020559061972119021.png!/both/200x123?imageView2/1/w/200/h/123"
+                                 alt="Kubernetes容器日志收集">
+                        </a>
+                    </div>
+                    <span class="note">## 日志采集方式
+日志从传统方式演进到容器方式的过程就不详细讲了，可以参考一下这篇文章[Docker日志收集最佳实践](https://www.cnblogs.com/jingjulianyi/p/6637801.html)，由于容器的...</span>
+                    <p class="auth-span">
+                        <span class="muted"><i class="fa fa-clock-o"></i> 2019-06-15</span>
+                        <span class="muted"><i class="fa fa-eye"></i> 819浏览</span>
+                        <span class="muted">
+                            <a href="/getblogdetail.html?blogid=662">
+                            <span id="sourceId::662" class="cy_cmt_count"></span>
+                                <!--畅言导致加载缓慢，有时间处理一下-->
+                            <script id="cy_cmt_num"
+                                    src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cyt4SnwiG">
+                            </script>评论</a>
+                        </span>
+
+                </article>
+
+            
+                <article class="excerpt">
+                    <header>
+                        <a class="label label-important"
+                           href="getcategory.html?categoryid=1">java<i
+                                class="label-arrow"></i></a>
+                        <h2><a href="getblogdetail.html?blogid=660"
+                               title="2019我的金三银四">2019我的金三银四</a>
+                        </h2>
+                    </header>
+                    <div class="focus">
+                        <a href="getblogdetail.html?blogid=660">
+                            <img class="thumb" src="https://upyuncdn.wenzhihuai.com/20190404095747289171304.png!/both/200x123?imageView2/1/w/200/h/123"
+                                 alt="2019我的金三银四">
+                        </a>
+                    </div>
+                    <span class="note">先讲一下自己的情况吧，二本学生，17年毕业，目前在一家跨境电商从事Java技术开发工作（不是阿里，没那么厉害），技术栈目前偏向于容器云、持续集成持续交付这一块，也就是Spring Boot、Kubernetes、Docker这一块，之前也做...</span>
+                    <p class="auth-span">
+                        <span class="muted"><i class="fa fa-clock-o"></i> 2019-04-04</span>
+                        <span class="muted"><i class="fa fa-eye"></i> 1232浏览</span>
+                        <span class="muted">
+                            <a href="/getblogdetail.html?blogid=660">
+                            <span id="sourceId::660" class="cy_cmt_count"></span>
+                                <!--畅言导致加载缓慢，有时间处理一下-->
+                            <script id="cy_cmt_num"
+                                    src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cyt4SnwiG">
+                            </script>评论</a>
+                        </span>
+
+                </article>
+
+            
+                <article class="excerpt">
+                    <header>
+                        <a class="label label-important"
+                           href="getcategory.html?categoryid=0">生活笔记<i
+                                class="label-arrow"></i></a>
+                        <h2><a href="getblogdetail.html?blogid=651"
+                               title="晚来的2018总结">晚来的2018总结</a>
+                        </h2>
+                    </header>
+                    <div class="focus">
+                        <a href="getblogdetail.html?blogid=651">
+                            <img class="thumb" src="https://upyuncdn.wenzhihuai.com/20190113103109865107434.png!/both/200x123?imageView2/1/w/200/h/123"
+                                 alt="晚来的2018总结">
+                        </a>
+                    </div>
+                    <span class="note">年底老姐结婚，跑回家去了，忙着一直没写，本来想回深圳的时候空余的时候写写，没想到一直加班，嗯，9点半下班那种，偶尔也趁着间隙的时间，一段一段的凑着吧。
+
+
+想着17年12月31号写的那篇文章[https://www.cnblogs.c...</span>
+                    <p class="auth-span">
+                        <span class="muted"><i class="fa fa-clock-o"></i> 2019-01-13</span>
+                        <span class="muted"><i class="fa fa-eye"></i> 1187浏览</span>
+                        <span class="muted">
+                            <a href="/getblogdetail.html?blogid=651">
+                            <span id="sourceId::651" class="cy_cmt_count"></span>
+                                <!--畅言导致加载缓慢，有时间处理一下-->
+                            <script id="cy_cmt_num"
+                                    src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cyt4SnwiG">
+                            </script>评论</a>
+                        </span>
+
+                </article>
+
+            
+                <article class="excerpt">
+                    <header>
+                        <a class="label label-important"
+                           href="getcategory.html?categoryid=0">生活笔记<i
+                                class="label-arrow"></i></a>
+                        <h2><a href="getblogdetail.html?blogid=650"
+                               title="2018-12-17">2018-12-17</a>
+                        </h2>
+                    </header>
+                    <div class="focus">
+                        <a href="getblogdetail.html?blogid=650">
+                            <img class="thumb" src="http://image.wenzhihuai.com/images/20171104110110.png!/both/200x123?imageView2/1/w/200/h/123"
+                                 alt="2018-12-17">
+                        </a>
+                    </div>
+                    <span class="note">日志收集做的好端端的，不知道怎么被安排到容器云；云计算部待的好端端的不知道怎么被拆散；人手不够，资源不给，领导的话真的会影响周末。。。。。
+
+
+...</span>
+                    <p class="auth-span">
+                        <span class="muted"><i class="fa fa-clock-o"></i> 2018-12-17</span>
+                        <span class="muted"><i class="fa fa-eye"></i> 1116浏览</span>
+                        <span class="muted">
+                            <a href="/getblogdetail.html?blogid=650">
+                            <span id="sourceId::650" class="cy_cmt_count"></span>
+                                <!--畅言导致加载缓慢，有时间处理一下-->
+                            <script id="cy_cmt_num"
+                                    src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cyt4SnwiG">
+                            </script>评论</a>
+                        </span>
+
+                </article>
+
+            
+                <article class="excerpt">
+                    <header>
+                        <a class="label label-important"
+                           href="getcategory.html?categoryid=0">生活笔记<i
+                                class="label-arrow"></i></a>
+                        <h2><a href="getblogdetail.html?blogid=649"
+                               title="终于切换到阿里云了">终于切换到阿里云了</a>
+                        </h2>
+                    </header>
+                    <div class="focus">
+                        <a href="getblogdetail.html?blogid=649">
+                            <img class="thumb" src="http://image.wenzhihuai.com/images/20171104110123.png!/both/200x123?imageView2/1/w/200/h/123"
+                                 alt="终于切换到阿里云了">
+                        </a>
+                    </div>
+                    <span class="note">之前的域名在腾讯云买的，也不知什么情况，根据网友反馈的一些情况，有时候访问不了，特别是校园网，简直了，腾讯的新网还是不靠谱，最后实在受不了，换成了阿里云，等着看情况，感觉应该会好不少...</span>
+                    <p class="auth-span">
+                        <span class="muted"><i class="fa fa-clock-o"></i> 2018-12-17</span>
+                        <span class="muted"><i class="fa fa-eye"></i> 980浏览</span>
+                        <span class="muted">
+                            <a href="/getblogdetail.html?blogid=649">
+                            <span id="sourceId::649" class="cy_cmt_count"></span>
+                                <!--畅言导致加载缓慢，有时间处理一下-->
+                            <script id="cy_cmt_num"
+                                    src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cyt4SnwiG">
+                            </script>评论</a>
+                        </span>
+
+                </article>
+
+            
+                <article class="excerpt">
+                    <header>
+                        <a class="label label-important"
+                           href="getcategory.html?categoryid=1">java<i
+                                class="label-arrow"></i></a>
+                        <h2><a href="getblogdetail.html?blogid=648"
+                               title="Jenkins的一些笔记">Jenkins的一些笔记</a>
+                        </h2>
+                    </header>
+                    <div class="focus">
+                        <a href="getblogdetail.html?blogid=648">
+                            <img class="thumb" src="https://upyuncdn.wenzhihuai.com/20181029112422597829257.png!/both/200x123?imageView2/1/w/200/h/123"
+                                 alt="Jenkins的一些笔记">
+                        </a>
+                    </div>
+                    <span class="note">公司主要要开发自己的paas平台，集成了Jenkins，真的是遇到了很多很多困难，特别是在api调用的权限这一块，这里，把自己遇到的一些坑的解决方法做一下笔记吧。当然，首先要讲的，就是如何在开启安全的情况下进行API调用。
+
+## 一、...</span>
+                    <p class="auth-span">
+                        <span class="muted"><i class="fa fa-clock-o"></i> 2018-11-01</span>
+                        <span class="muted"><i class="fa fa-eye"></i> 1080浏览</span>
+                        <span class="muted">
+                            <a href="/getblogdetail.html?blogid=648">
+                            <span id="sourceId::648" class="cy_cmt_count"></span>
+                                <!--畅言导致加载缓慢，有时间处理一下-->
+                            <script id="cy_cmt_num"
+                                    src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cyt4SnwiG">
+                            </script>评论</a>
+                        </span>
+
+                </article>
+
+            
+                <article class="excerpt">
+                    <header>
+                        <a class="label label-important"
+                           href="getcategory.html?categoryid=1">java<i
+                                class="label-arrow"></i></a>
+                        <h2><a href="getblogdetail.html?blogid=647"
+                               title="Netty实现简单HTTP代理服务器">Netty实现简单HTTP代理服务器</a>
+                        </h2>
+                    </header>
+                    <div class="focus">
+                        <a href="getblogdetail.html?blogid=647">
+                            <img class="thumb" src="http://image.wenzhihuai.com/images/20171104110110.png!/both/200x123?imageView2/1/w/200/h/123"
+                                 alt="Netty实现简单HTTP代理服务器">
+                        </a>
+                    </div>
+                    <span class="note">自上次使用Openresty+Lua+Nginx的来加速自己的网站，用上了比较时髦的技术，感觉算是让自己的网站响应速度达到极限了，直到看到了Netty，公司就是打算用Netty来替代Openresty这一套，所以，自己也学了好久，琢磨了好一...</span>
+                    <p class="auth-span">
+                        <span class="muted"><i class="fa fa-clock-o"></i> 2018-09-18</span>
+                        <span class="muted"><i class="fa fa-eye"></i> 1325浏览</span>
+                        <span class="muted">
+                            <a href="/getblogdetail.html?blogid=647">
+                            <span id="sourceId::647" class="cy_cmt_count"></span>
+                                <!--畅言导致加载缓慢，有时间处理一下-->
+                            <script id="cy_cmt_num"
+                                    src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cyt4SnwiG">
+                            </script>评论</a>
+                        </span>
+
+                </article>
+
+            
+                <article class="excerpt">
+                    <header>
+                        <a class="label label-important"
+                           href="getcategory.html?categoryid=1">java<i
+                                class="label-arrow"></i></a>
+                        <h2><a href="getblogdetail.html?blogid=646"
+                               title="【个人杂谈】MacBook Pro的使用心得">【个人杂谈】MacBook Pro的使用心得</a>
+                        </h2>
+                    </header>
+                    <div class="focus">
+                        <a href="getblogdetail.html?blogid=646">
+                            <img class="thumb" src="http://image.wenzhihuai.com/images/20180712103705134985652.png!/both/200x123?imageView2/1/w/200/h/123"
+                                 alt="【个人杂谈】MacBook Pro的使用心得">
+                        </a>
+                    </div>
+                    <span class="note">上个月刚买的MacBook Pro，苹果就发新版了。。。。
+<div align="center">![](http://image.wenzhihuai.com/images/201807121111321535263715.png)<...</span>
+                    <p class="auth-span">
+                        <span class="muted"><i class="fa fa-clock-o"></i> 2018-07-19</span>
+                        <span class="muted"><i class="fa fa-eye"></i> 1033浏览</span>
+                        <span class="muted">
+                            <a href="/getblogdetail.html?blogid=646">
+                            <span id="sourceId::646" class="cy_cmt_count"></span>
+                                <!--畅言导致加载缓慢，有时间处理一下-->
+                            <script id="cy_cmt_num"
+                                    src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cyt4SnwiG">
+                            </script>评论</a>
+                        </span>
+
+                </article>
+
+            
+                <article class="excerpt">
+                    <header>
+                        <a class="label label-important"
+                           href="getcategory.html?categoryid=1">java<i
+                                class="label-arrow"></i></a>
+                        <h2><a href="getblogdetail.html?blogid=645"
+                               title="【网页加速】lua redis的二次升级">【网页加速】lua redis的二次升级</a>
+                        </h2>
+                    </header>
+                    <div class="focus">
+                        <a href="getblogdetail.html?blogid=645">
+                            <img class="thumb" src="http://image.wenzhihuai.com/images/20171104110123.png!/both/200x123?imageView2/1/w/200/h/123"
+                                 alt="【网页加速】lua redis的二次升级">
+                        </a>
+                    </div>
+                    <span class="note">之前发过openresty的相关文章，也是用于加速网页速度的，但是上次没有优化好代码，这次整理了下，优化了nginx的配置和lua的代码，感兴趣的话可以看看上篇的文章：
+[https://www.cnblogs.com/w15706310...</span>
+                    <p class="auth-span">
+                        <span class="muted"><i class="fa fa-clock-o"></i> 2018-07-19</span>
+                        <span class="muted"><i class="fa fa-eye"></i> 1078浏览</span>
+                        <span class="muted">
+                            <a href="/getblogdetail.html?blogid=645">
+                            <span id="sourceId::645" class="cy_cmt_count"></span>
+                                <!--畅言导致加载缓慢，有时间处理一下-->
+                            <script id="cy_cmt_num"
+                                    src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cyt4SnwiG">
+                            </script>评论</a>
+                        </span>
+
+                </article>
+
+            
+                <article class="excerpt">
+                    <header>
+                        <a class="label label-important"
+                           href="getcategory.html?categoryid=1">java<i
+                                class="label-arrow"></i></a>
+                        <h2><a href="getblogdetail.html?blogid=637"
+                               title="中间件——canal小记">中间件——canal小记</a>
+                        </h2>
+                    </header>
+                    <div class="focus">
+                        <a href="getblogdetail.html?blogid=637">
+                            <img class="thumb" src="http://image.wenzhihuai.com/images/201804290227121343830102.png!/both/200x123?imageView2/1/w/200/h/123"
+                                 alt="中间件——canal小记">
+                        </a>
+                    </div>
+                    <span class="note">先来了解一下MySQL的主从备份：  
+
+
+<div align="center">
+
+![](https://upyuncdn.wenzhihuai.com/20180421025107389573244.png)
+
+</d...</span>
+                    <p class="auth-span">
+                        <span class="muted"><i class="fa fa-clock-o"></i> 2018-04-29</span>
+                        <span class="muted"><i class="fa fa-eye"></i> 771浏览</span>
+                        <span class="muted">
+                            <a href="/getblogdetail.html?blogid=637">
+                            <span id="sourceId::637" class="cy_cmt_count"></span>
+                                <!--畅言导致加载缓慢，有时间处理一下-->
+                            <script id="cy_cmt_num"
+                                    src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cyt4SnwiG">
+                            </script>评论</a>
+                        </span>
+
+                </article>
+
+            
+                <article class="excerpt">
+                    <header>
+                        <a class="label label-important"
+                           href="getcategory.html?categoryid=0">生活笔记<i
+                                class="label-arrow"></i></a>
+                        <h2><a href="getblogdetail.html?blogid=635"
+                               title="2018-04-15">2018-04-15</a>
+                        </h2>
+                    </header>
+                    <div class="focus">
+                        <a href="getblogdetail.html?blogid=635">
+                            <img class="thumb" src="https://upyuncdn.wenzhihuai.com/201804151112401179973733.png!/both/200x123?imageView2/1/w/200/h/123"
+                                 alt="2018-04-15">
+                        </a>
+                    </div>
+                    <span class="note">到了新公司，一下子感觉好幸福，中间件组（梦想啊），好开心啊，哈哈哈哈。但是突然感觉有点力不从心了，超级懒，本来都计划看看书写写博客什么的，结果今天还是打游戏去了，自制力是真的菜~~，怎么办呢？趁着下周有一天半的入职培训，好好整理一下吧，好多...</span>
+                    <p class="auth-span">
+                        <span class="muted"><i class="fa fa-clock-o"></i> 2018-04-15</span>
+                        <span class="muted"><i class="fa fa-eye"></i> 1313浏览</span>
+                        <span class="muted">
+                            <a href="/getblogdetail.html?blogid=635">
+                            <span id="sourceId::635" class="cy_cmt_count"></span>
+                                <!--畅言导致加载缓慢，有时间处理一下-->
+                            <script id="cy_cmt_num"
+                                    src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cyt4SnwiG">
+                            </script>评论</a>
+                        </span>
+
+                </article>
+
+            
+                            
+                <div class="pagination" style="background: transparent">
+                    <ul>
+                        <li>
+                            <a href="/index.html?pagenum=1">首页</a>
+                        </li>
+                        <li class="prev-page"><a
+                                href="/index.html?pagenum=0">上一页</a>
+                        </li>
+                        
+                            
+                                
+                                    <li class="active"><span> 1 </span></li>
+                                
+                                
+                            
+                        
+                            
+                                
+                                
+                                    <li>
+                                        <a href="/index.html?pagenum=2">2</a>
+                                    </li>
+                                
+                            
+                        
+                            
+                                
+                                
+                                    <li>
+                                        <a href="/index.html?pagenum=3">3</a>
+                                    </li>
+                                
+                            
+                        
+                            
+                                
+                                
+                                    <li>
+                                        <a href="/index.html?pagenum=4">4</a>
+                                    </li>
+                                
+                            
+                        
+                            
+                                
+                                
+                                    <li>
+                                        <a href="/index.html?pagenum=5">5</a>
+                                    </li>
+                                
+                            
+                        
+                        
+                            <li class="next-page"><a
+                                    href="/index.html?pagenum=2">下一页</a>
+                            </li>
+                        
+                        <li>
+                            <a href="/index.html?pagenum=5">末页</a>
+                        </li>
+                        <li>
+                            <a>共5页</a>
+                        </li>
+                    </ul>
+                </div>
+            
+        </div>
+    </div>
+    
+
+
+
+<link href="http://image.wenzhihuai.com/newlypublished.css?ver=20171017" rel="stylesheet">
+<script>
+    $.ajax({
+        url: "/blogbyhits.html",
+        type: "get",
+        dataType: 'json',
+        success: function (data) {
+            var html = "";
+            var guessyourlike = $(".guessyourlike");
+            for (var i = 0; i < data.length; i++) {
+                html += "    <li><a href=\"" + "/getblogdetail.html?blogid=" + data[i].blogid + "\"\n" +
+                    "    title=\"" + data[i].title + "\">\n" +
+                    "        <span class=\"thumbnail\"><img src=\"" + data[i].imageurl + "\" alt=\"" + data[i].title + "\" width=\"100px\"></span>\n" +
+                    "        <span class=\"text\">" + data[i].title + "</span><span class=\"muted\">" + data[i].createAt + "</span>\n" +
+                    "    <span class=\"muted\">" + data[i].hits + "浏览</span></a></li>\n";
+            }
+            guessyourlike.append(html);
+        },
+        error: function (e) {
+        }
+    });
+    $.ajax({
+        url: "/getjsonbycategories.html",
+        type: "get",
+        dataType: 'json',
+        success: function (data) {
+            var html = "";
+            var fenlei = $("#fenlei");
+            for (var i = 0; i < data.length; i++) {
+                html += "<a href=\"/tech.html?categoryid=" + data[i].cId + "\">\n" +
+                    data[i].cName + "</a>\n"
+            }
+            fenlei.append(html);
+        },
+        error: function (e) {
+        }
+    });
+    //    <a href="http://www.ibloger.net/tags-12.html" class="tag-link-12" title="214个话题"
+    //    style="font-size: 13px;"> Java </a>
+
+    $.ajax({
+        url: "/biaoqianyun.html",
+        type: "get",
+        dataType: 'json',
+        success: function (data) {
+            var html = "";
+            var fenlei = $(".tags-box");
+            for (var i = 0; i < data.length; i++) {
+                html += "<a href=\"/tech.html?tid=" + data[i].key + "\">\n" +
+                    data[i].value + "</a>\n"
+            }
+            fenlei.append(html);
+        },
+        error: function (e) {
+        }
+    });
+
+    //link
+    $.ajax({
+        url: "/links.html",
+        type: "get",
+        dataType: 'json',
+        success: function (data) {
+            var html = "";
+            var fenlei = $(".blogroll");
+            for (var i = 0; i < data.length; i++) {
+                html += "<li><a href=" + data[i].url + ">" +
+                    data[i].name + "</a></li>\n"
+            }
+            fenlei.append(html);
+        },
+        error: function (e) {
+        }
+    });
+    $(document).ready(function () {
+        setTimeout(function () {
+            var navOffset = $(".widgetRoller").offset().top;
+            $(window).scroll(function () {
+                var scrollPos = $(window).scrollTop();
+                if (scrollPos >= navOffset) {
+                    $(".widgetRoller").css({position: "fixed", top: 0, zIndex: 0, width: 330}).fadeIn(100);
+                } else {
+                    $(".widgetRoller").removeAttr("style");
+                }
+            });
+        }, 2000);
+    });
+
+    function test() {
+        var div1 = $("#biaoqian");
+        if (div1.style.display == "block") {
+            div1.style.display = "none";
+        } else {
+            div1.style.display = "block";
+        }
+    }
+</script>
+<aside class="sidebar">
+    <div class="widget widget_text" style="height: 115px;margin-bottom: 0px">
+        <iframe src="http://www.seniverse.com/weather/weather.aspx?uid=U35799536E&cid=CHBJ000000&l=&p=SMART&a=1&u=C&s=13&m=
+        0&x=1&d=0&fc=&bgc=2E93D9&bc=&ti=0&in=1&li=" frameborder="0" scrolling="no" width="330" height="115"
+                allowTransparency="true"></iframe>
+    </div>
+
+    <div class="widget d_tag">
+        <div class="title"><h2>分类</h2></div>
+        <div class="d_tags" id="fenlei" style="height: auto">
+            <a href="/life.html">生活笔记</a>
+        </div>
+    </div>
+
+
+    <div class="widget d_postlist">
+        <div class="title"><h2>猜你喜欢</h2></div>
+        <ul class="guessyourlike">
+        </ul>
+    </div>
+
+
+    <div class="widget widget_text">
+        <div class="title"><h2>新浪微博</h2></div>
+        <div class="textwidget">
+            <iframe width="100%!"(MISSING) height="550" class="share_self" frameborder="0" scrolling="no"
+                    src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=0&noborder=0&isWeibo=1&isFans=1&uid=1925306000&verifier=5d4515d6&dpc=1"></iframe>
+        </div>
+    </div>
+    <div class="widget widget_links">
+        <div class="title"><h2>友情链接</h2></div>
+        <ul class="xoxo blogroll" style="width: 332px;">
+            <li><a href="http://www.99banzou.com" target="_blank">99伴奏网</a></li>
+            <li><a href="http://www.anotherhome.net" target="_blank">Anotherhome</a></li>
+            <li><a href="http://zhouchenwen.com" rel="acquaintance" target="_blank">ColdCoder</a></li>
+            <li><a href="http://www.spotty.com.cn/" target="_blank">DevNews</a></li>
+            <li><a href="http://www.findspace.name" target="_blank">Findspace</a></li>
+            <li><a href="http://blog.hickwu.com/" target="_blank">Hick</a></li>
+        </ul>
+    </div>
+
+
+    <div class="widgetRoller">
+        <div class="widget widget_divTags" id="divTags">
+            <div class="title"><h2>标签云</h2></div>
+            <ul class="widget_divTags_inner">
+                <div class="tags-box">
+                </div>
+            </ul>
+        </div>
+    </div>
+</aside>
+</section>
+
+
+
+
+
+
+
+<footer class="footer">
+    <div class="footer-inner">
+        <div style="float: right;margin-top: 0;width: 100px;height: 50px">
+            <a href="https://www.upyun.com">
+                <img src="http://image.wenzhihuai.com/youpailogo6.png" style="float: left;width: auto"/>
+            </a>
+        </div>
+        <div class="copyright pull-left" style="float: left">
+            <a href="" title="Zephery">Zephery</a> 版权所有丨改自<a
+                href="http://yusi123.com/"> 欲思 </a>主题丨基于 SSM 构建 © 2016-
+            <script>
+                var date = new Date();  //创建对象
+                var y = date.getFullYear();     //获取年份
+                document.write(y);
+            </script>
+            丨托管于
+            <a rel="nofollow">云存储</a>
+            |
+            <a rel="nofollow" target="_blank" href="http://www.wenzhihuai.com:8081/admin/index.html">后台管理 </a>
+            丨
+            <a rel="nofollow" target="_blank"
+               href="http://www.beian.miit.gov.cn/">粤ICP备17092242号-1</a>
+        </div>
+        
+        <div class="copyright pull-left" style="float: left;">
+            本服务器IP地址：47.115.44.242 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 项目启动时间：2020-03-28 19:16:07
+        </div>
+        <div>
+            <!-- cnzz stats -->
+            <script type="text/javascript">
+                var cnzz_s_tag = document.createElement('script');
+                cnzz_s_tag.type = 'text/javascript';
+                cnzz_s_tag.async = true;
+                cnzz_s_tag.charset = 'utf-8';
+                cnzz_s_tag.src = 'https://w.cnzz.com/c.php?id=1262457277&async=1';
+                var root_s = document.getElementsByTagName('script')[0];
+                root_s.parentNode.insertBefore(cnzz_s_tag, root_s);
+            </script>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
